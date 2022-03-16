@@ -3,25 +3,39 @@ import './App.css';
 
 function App() {
 
-  var nombre ="El Pato Lucas";
 
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hola, soy {nombre}
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>Select picker de memes</p>
+      <select>
+        <option value="fire"  >Casa en llamas</option>
+        <option value="Futurama" >Futurama</option>
+        <option value="History" >History Channel</option>
+        <option value="Matrix" >Matrix</option>
+        <option value="Philo">Philosophyraptor</option>
+        <option value="Smart" >Smart Guy</option>
+
+      </select>
+
+      <p>Input text -Primera linea</p>
+
+      <input type="text" placeholder="linea 1" />
+
+      <p>Input text- Segunda linea</p>
+
+      <input type="text"  placeholder="linea 2"/>
+
+      <p>boton exportar</p>
+
+      <button>Exportar</button>
+
+        <div>
+          <span>Linea 1</span>
+          <span>Linea 2</span>
+          <img src="" />
+        </div>
+
     </div>
   );
 }
