@@ -8,11 +8,19 @@ import {useState} from "react";
 
 function App() {
 
-const [linea1] = useState('Hola Mundo');
+const [linea1, setlinea1] = useState('Hola Mundo1');
+const [linea2, setlinea2] = useState('Hola Mundo2');
 //esto se llama crear un estado, dentro del parentesis se le
 //pasa valor pro defecto a useState(). 
 //esta declarando dos constantes y les va a pasar los valores mediante el usetate.
 //el primer valor a linea1 y el segundo a setlinea1
+
+const onChangeLinea1 = function (evento) {
+  
+  alert(evento.target.value)
+}
+
+
 
   return (
     <div className="App">
@@ -29,7 +37,7 @@ const [linea1] = useState('Hola Mundo');
 
       <p>Input text -Primera linea</p>
 
-      <input type="text" placeholder="linea 1" />
+      <input onChange={onChangeLinea1} type="text" placeholder="linea 1" />
 
       <p>Input text- Segunda linea</p>
 
@@ -41,7 +49,7 @@ const [linea1] = useState('Hola Mundo');
 
         <div>
           <span>{linea1}</span> <br />
-          <span>Linea 2</span>  <br />
+          <span>{linea2}</span>  <br />
           <img src="" alt='no image'></img>
         
         </div>
