@@ -70,7 +70,7 @@ const onChangeImagen = function (evento) {
 
         <div>
           <span className='linea1' >{linea1}</span> <br />
-          <span>{linea2}</span>  <br />
+          <span className='linea2'>{linea2}</span>  <br />
           <img className='imagen' src={"/img/" + imagen + ".jpg"} alt='seleciona una imagen'></img>
         
         </div>
