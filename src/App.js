@@ -5,6 +5,7 @@ import './App.css';
 import {useState} from "react";
 //useState se importa entre corchetes porque su libreria por defecto no es react, para importar algo en concreto de un sitio
 //que no es el suyo por defecto se mete entre corchetes. Sino no compila
+import html2canvas from 'html2canvas';
 
 function App() {
 
@@ -26,13 +27,30 @@ const onChangeLinea1 = function (evento) {
 const onChangeLinea2 = function (evento) {
   
   setlinea2(evento.target.value)
-  //Modifica el valor de linea 1 con cada valor del evento tarjeteado y renderiza
+  //Modifica el valor de linea 2 con cada valor del evento tarjeteado y renderiza
 
 }
 
 const onChangeImagen = function (evento) {
   
   setimagen(evento.target.value)
+  //Modifica el valor de linea 1 con cada valor del evento tarjeteado y renderiza
+
+}
+
+const onClickExportar = function (evento) {
+  
+ alert("Exportar")
+ html2canvas(document.querySelector("#meme")).then(canvas => {
+ 
+  var img = canvas.toDataURL("image/png");
+  var link = document.createElement('a');
+  link.download = 'meme.png';
+  link.href = img;
+  link.click();
+
+
+});
   //Modifica el valor de linea 1 con cada valor del evento tarjeteado y renderiza
 
 }
@@ -66,9 +84,9 @@ const onChangeImagen = function (evento) {
 
       <p>boton exportar</p>
 
-      <button>Exportar</button>
+      <button onClick={onClickExportar} >Exportar</button>
 
-        <div>
+        <div id='meme'>
           <span className='linea1' >{linea1}</span> <br />
           <span className='linea2'>{linea2}</span>  <br />
           <img className='imagen' src={"/img/" + imagen + ".jpg"} alt='seleciona una imagen'></img>
