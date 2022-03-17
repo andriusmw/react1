@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+/*----------------------*/
+
+.linea1 {
+  margin-top: 60px;
+  font-size: 38px;
+  position: absolute;
+  color: white;
+  text-shadow: -3px -2px 2px rgb(255 255 255 / 10%), 2px 2px 2px rgb(0 0 0 / 50%);
+  width: 100%;
+  left: 0px;
+}
+
+.imagen {
+  width: 100%;
+}

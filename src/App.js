@@ -69,9 +69,9 @@ const onChangeImagen = function (evento) {
       <button>Exportar</button>
 
         <div>
-          <span>{linea1}</span> <br />
+          <span className='linea1' >{linea1}</span> <br />
           <span>{linea2}</span>  <br />
-          <img src={"/img/" + imagen + ".jpg"} alt='seleciona una imagen'></img>
+          <img className='imagen' src={"/img/" + imagen + ".jpg"} alt='seleciona una imagen'></img>
         
         </div>
 
