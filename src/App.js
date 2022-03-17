@@ -22,6 +22,13 @@ const onChangeLinea1 = function (evento) {
 
 }
 
+const onChangeLinea2 = function (evento) {
+  
+  setlinea2(evento.target.value)
+  //Modifica el valor de linea 1 con cada valor del evento tarjeteado y renderiza
+
+}
+
 //onchangelinea1 cuando se cambia un valor del input, llama a setlinea1 que recibe el valor
 //del evento tarjeteado y volvemos a "linea 11" donde vemos que linea1 y setlinea1
 //ambos reciben el mismo valor, al pasarle un valor a setlinea1, se lo pasamos a linea1
@@ -47,7 +54,7 @@ const onChangeLinea1 = function (evento) {
 
       <p>Input text- Segunda linea</p>
 
-      <input type="text"  placeholder="linea 2"/>
+      <input type="text" onChange={onChangeLinea2}  placeholder="linea 2"/>
 
       <p>boton exportar</p>
 
