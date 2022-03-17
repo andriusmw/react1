@@ -10,6 +10,7 @@ function App() {
 
 const [linea1, setlinea1] = useState('Hola Mundo1');
 const [linea2, setlinea2] = useState('Hola Mundo2');
+const [imagen, setimagen]= useState('');
 //esto se llama crear un estado, dentro del parentesis se le
 //pasa valor pro defecto a useState(). 
 //esta declarando dos constantes y les va a pasar los valores mediante el usetate.
@@ -29,6 +30,13 @@ const onChangeLinea2 = function (evento) {
 
 }
 
+const onChangeImagen = function (evento) {
+  
+  setimagen(evento.target.value)
+  //Modifica el valor de linea 1 con cada valor del evento tarjeteado y renderiza
+
+}
+
 //onchangelinea1 cuando se cambia un valor del input, llama a setlinea1 que recibe el valor
 //del evento tarjeteado y volvemos a "linea 11" donde vemos que linea1 y setlinea1
 //ambos reciben el mismo valor, al pasarle un valor a setlinea1, se lo pasamos a linea1
@@ -37,7 +45,7 @@ const onChangeLinea2 = function (evento) {
   return (
     <div className="App">
       <p>Select picker de memes</p>
-      <select>
+      <select onChange={onChangeImagen} >
         <option value="fire"  >Casa en llamas</option>
         <option value="Futurama" >Futurama</option>
         <option value="History" >History Channel</option>
@@ -63,7 +71,7 @@ const onChangeLinea2 = function (evento) {
         <div>
           <span>{linea1}</span> <br />
           <span>{linea2}</span>  <br />
-          <img src="" alt='no image'></img>
+          <img src={"/img/" + imagen + ".jpg"} alt='seleciona una imagen'></img>
         
         </div>
 
