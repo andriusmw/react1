@@ -39,25 +39,7 @@
 
 /*----------------------*/
 
-.linea1 {
-  margin-top: 60px;
-  font-size: 38px;
-  position: absolute;
-  color: white;
-  text-shadow: -3px -2px 2px rgb(255 255 255 / 10%), 2px 2px 2px rgb(0 0 0 / 50%);
-  width: 100%;
-  left: 0px;
-}
 
-.linea2{
-  margin-top: 85%;
-  font-size: 38px;
-  position: absolute;
-  color: white;
-  text-shadow: -3px -2px 2px rgb(255 255 255 / 10%), 2px 2px 2px rgb(0 0 0 / 50%);
-  width: 100%;
-  left: 0px;
-}
 
 .imagen {
   width: 100%;
@@ -70,12 +52,12 @@
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
+@media (min-width: 1025px) {
   
   /* CSS */
   .linea1 {
     margin-top: 60px;
-    font-size: 60px;
+    font-size: 70px;
     position: absolute;
     color: white;
     text-shadow: -3px -2px 2px rgb(255 255 255 / 10%), 2px 2px 2px rgb(0 0 0 / 50%);
@@ -85,7 +67,7 @@
   
   .linea2{
     margin-top: 85%;
-    font-size: 60px;
+    font-size: 70px;
     position: absolute;
     color: white;
     text-shadow: -3px -2px 2px rgb(255 255 255 / 10%), 2px 2px 2px rgb(0 0 0 / 50%);
