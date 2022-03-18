@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactDOM } from 'react';
+//import { ReactDOM } from 'react';
 import './App.css';
 //Hay que importar useState from React
 import {useState} from "react";
