@@ -86,13 +86,14 @@ const onClickExportar = function (evento) {
 
       <button onClick={onClickExportar} >Exportar</button>
 
-        <div id='meme'>
+        
+               <div id='meme'>
           <span className='linea1' >{linea1}</span> <br />
           <span className='linea2'>{linea2}</span>  <br />
           <img className='imagen' src={"/img/" + imagen + ".jpg"} alt='seleciona una imagen'></img>
         
-        </div>
-
+     
+      </div>
     </div>
   );
 }
